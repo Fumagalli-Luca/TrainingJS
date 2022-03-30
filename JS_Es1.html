@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>JSES1</title>
+  </head>
+  <body id="body">
+    <h1 id="text1">JSES1</h1>
+    <h2 id="text2"></h2>
+    <button id="btn1">NON CLICCARE!</button>
+    <script>
+      var x;
+      console.log("x after init : ", x);
+      x = 3;
+      console.log("x = 3 : ", x);
+      x = false;
+      console.log("x = false : ", x);
+
+      console.log(
+        "text 2 inner Text : ",
+        document.getElementById("text2").innerText
+      );
+      document.getElementById("text2").innerText =
+        "First excercise of Vanilla JS Training";
+      console.log(
+        "text 2 inner Text : ",
+        document.getElementById("text2").innerText
+      );
+      document.getElementById("text1").setAttribute("style", "color:lime");
+
+      var button = document.getElementById("btn1");
+      button.addEventListener("click", function () {
+        console.log("click");
+      });
+     document.getElementById("btn1").setAttribute("style","color:red");
+    </script>
+  </body>
+</html>
